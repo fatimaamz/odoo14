@@ -3,10 +3,10 @@
 
 from odoo import models, fields, api, _
 
-
+"""
 class AccountMove(models.Model):
     _inherit = 'account.move'
-
+    
     def _post(self, soft=True):
         vendor_bill_service = self.env.ref('account_fleet.data_fleet_service_type_vendor_bill', raise_if_not_found=False)
         if not vendor_bill_service:
@@ -29,7 +29,7 @@ class AccountMove(models.Model):
             log_service_id.message_post(body=log)
         return posted
 
-
+"""
 class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
